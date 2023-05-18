@@ -9,15 +9,14 @@
 <body>
     <div class="container">
         <div class="col">
-            <h2>Customer manager</h2>
-            <table class="table table-dark">
-                <tr>
-                    <td>STT</td>
-                    <td>Name</td>
-                    <td>Option</td>
-                </tr>
-                {list-user}
-            </table>
+            <h2>Creat Customer</h2>
+            <form action="/creat" method="post">
+                <div class="mb-3">
+                  <label for="name" class="form-label">Name</label>
+                  <input type="text" class="form-control" id="nameInput" name="name">
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
         </div>
     </div>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
